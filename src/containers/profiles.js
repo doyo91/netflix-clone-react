@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Header, Profiles } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
 
@@ -17,7 +17,7 @@ export function SelectProfileContainer({ user, setProfile }) {
         <Profiles.List>
           <Profiles.User>
             <Profiles.Picture src={user.photoURL} />
-            <Profile.Name>{user.displayName}</Profile.Name>
+            <Profiles.Name>{user.displayName}</Profiles.Name>
           </Profiles.User>
         </Profiles.List>
       </Profiles>
