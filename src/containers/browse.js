@@ -56,6 +56,7 @@ export function BrowseContainer({ slides }) {
             Fleck busca la conexión mientras camina por las calles de Gotham
             City.
           </Header.Text>
+          <Header.PlayButton>Reproducir</Header.PlayButton>
         </Header.Feature>
       </Header>
     </>

@@ -6,7 +6,7 @@ export const Background = styled.div`
   flex-direction: column;
   background: url(${({ src }) =>
       src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
-    top left / cover no-repeat;
+    top left/cover no-repeat;
 
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) =>
@@ -120,6 +120,26 @@ export const SearchIcon = styled.button`
   img {
     filter: brightness(0) invert(1);
     width: 16px;
+  }
+`;
+
+export const PlayButton = styled.button`
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  background-color: #e6e6e6;
+  color: #000;
+  border-width: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  max-width: 150px;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #ff1e1e;
+    color: white;
   }
 `;
 
