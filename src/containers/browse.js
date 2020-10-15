@@ -5,6 +5,7 @@ import { FirebaseContext } from "../context/firebase";
 import { Card, Header, Loading } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.svg";
+import Player from "../components/player";
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("series");
@@ -96,7 +97,10 @@ export function BrowseContainer({ slides }) {
               ))}
             </Card.Entities>
             <Card.Feature category={category}>
-              <p>hello</p>
+              <Player>
+                <Player.Button />
+                <Player.Video src="/videos/bunny.mp4" />
+              </Player>
             </Card.Feature>
           </Card>
         ))}

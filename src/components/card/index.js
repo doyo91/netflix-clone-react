@@ -70,7 +70,7 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
         <FeatureText>{itemFeature.description}</FeatureText>
         <FeatureClose onClick={() => setShowFeature(false)}>
-          <img src="/images/icon/close.png" alt="close" />
+          <img src="/images/icons/close.png" alt="close" />
         </FeatureClose>
 
         <Group margin="30px 0" flexDirection="row" alignItems="center">
